@@ -7,7 +7,6 @@ import network.*;
 /**
  * Walker class
  *
- * @author tadaki
  */
 public class Walker {
 
@@ -16,8 +15,8 @@ public class Walker {
     private Node currentNode;
 
     public Walker(AbstractNetwork network, Random random) {
-        this.network = network;
-        this.random = random;
+
+        
     }
 
     /**
@@ -26,13 +25,12 @@ public class Walker {
      * @param start
      */
     public void initialize(Node start) {
-        currentNode = start;
+
     }
 
     public Node oneStep() {
-        List<Node> neighbors = network.neighbours(currentNode);
-        int k = random.nextInt(neighbors.size());
-        currentNode = neighbors.get(k);
+
+        
         return currentNode;
     }
 
